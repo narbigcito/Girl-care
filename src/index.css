@@ -1,0 +1,92 @@
+:root {
+  /* Base palette */
+  --color-bg: #FFF5F7;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #FFF0F3;
+  --color-border: #F5C6CF;
+  --color-text-primary: #3D2A3E;
+  --color-text-secondary: #8C6B8E;
+  --color-text-muted: #BFA8C0;
+
+  /* Phase colors */
+  --phase-menstrual: #FFCDD5;
+  --phase-follicular: #E8F5E9;
+  --phase-ovulation: #FFF9C4;
+  --phase-luteal: #EDE7F6;
+  --phase-predicted-bg: #FFE4E1;
+
+  /* Period status */
+  --period-start: #E91E63;
+  --period-flow: #C2185B;
+  --period-end: #F48FB1;
+
+  /* Symptom severity */
+  --severity-0: #E0E0E0;
+  --severity-1: #FFCC80;
+  --severity-2: #FF8A65;
+  --severity-3: #E53935;
+
+  /* Interactive */
+  --color-primary: #E91E63;
+  --color-primary-hover: #C2185B;
+  --color-focus-ring: #F48FB1;
+
+  /* Typography */
+  --font-body: 'Nunito', 'Segoe UI', sans-serif;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 4px rgba(61, 42, 62, 0.08);
+  --shadow-md: 0 4px 20px rgba(61, 42, 62, 0.12);
+  --shadow-lg: 0 8px 40px rgba(61, 42, 62, 0.18);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  min-height: 100dvh;
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+textarea, input {
+  font-family: var(--font-body);
+}
